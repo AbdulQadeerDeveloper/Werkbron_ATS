@@ -26,7 +26,7 @@ const statusColors = {
 
 const CandidatesTable = ({ candidates = [] }) => {
   return (
-    <Box border="1px solid #E2E8F0" borderRadius="md" overflow="hidden" boxShadow="sm" w="380px" h="370px" padding="0px" overflowY="auto">
+    <Box border="1px solid #E2E8F0" borderRadius="md" overflow="hidden" boxShadow="sm" w="100%" h="520px" marginBottom="20px" padding="0px" overflowY="auto">
       <Table variant="simple">
         {/* Table Header */}
         <Thead bg="gray.100">
@@ -86,11 +86,12 @@ const sampleCandidates = [
   { name: "Maria Henderson", position: "Project Manager", company: "Company A", status: "1st Interview" },
   { name: "Maria Henderson", position: "Project Manager", company: "Company A", status: "2nd Interview" },
   { name: "Maria Henderson", position: "Project Manager", company: "Company A", status: "Placed" },
+  
 ];
 
 export default function StatusCandiadate() {
   return (
-    <Box p={0}>
+    <Box backgroundColor="white" p={0}>
       <CandidatesTable candidates={sampleCandidates} />
     </Box>
   );

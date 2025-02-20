@@ -6,15 +6,17 @@ import { MdOutlineCalendarMonth } from "react-icons/md";
 // Sample Task Data
 const tasks = [
   { id: 1, title: "Task 1. Descriptive task can be long and multiple line", date: "31 Jan 2025" },
-  { id: 2, title: "Task 2", date: "1 Feb 2025" },
-  { id: 3, title: "Task 3", date: "1 Feb 2025" },
-  { id: 4, title: "Task 4", date: "1 Feb 2025" },
+  { id: 2, title: "Task 2", date: "10 Feb 2025" },
+  { id: 3, title: "Task 3", date: "11 Feb 2025" },
+  { id: 4, title: "Task 4", date: "12 Feb 2025" },
+  { id: 5, title: "Task 5", date: "13 Feb 2025" },
+  
   
 ];
 
 const TaskList = () => {
   return (
-    <Box border="1px solid #E2E8F0" backgroundColor="white" borderRadius="md" p={4} boxShadow="sm" w="380px" h="370px">
+    <Box border="1px solid #E2E8F0" backgroundColor="white" borderRadius="md" p={4} boxShadow="sm" w="100%" h="520px">
       {/* Section Title */}
       <Text fontSize="lg" fontWeight="bold" mb={4}>
         Follow Up

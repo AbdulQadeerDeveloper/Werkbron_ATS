@@ -18,7 +18,7 @@ const Dashboard = () => {
       <Box flex="1" p={5}>
         <TopHeader onOpen={() => setSidebarOpen(true)} />
         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={5} mt={5}>
-          <CandidatesCard />
+          <CandidatesCard  />
           <ClientsCard />
           <Calendar />
           <ResumeParser />

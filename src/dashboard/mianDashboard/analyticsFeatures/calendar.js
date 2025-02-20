@@ -16,7 +16,7 @@ const Calendar = () => {
   ];
 
   return (
-    <Box bg="white" p={4} borderRadius="lg" border="1px solid #E2E8F0"  w="380px" h="370px" overflowY="auto">
+    <Box bg="white" p={4} borderRadius="lg" border="1px solid #E2E8F0"  w="100%" h="520px" overflowY="auto">
       <Text fontSize="lg" fontWeight="bold">Calendar</Text><hr/>
       <Text fontSize="2xl" fontWeight="bold" mt={2}>28 January 2024</Text>
       <Text color="gray.500" mb={4}>Tuesday</Text>
@@ -33,7 +33,7 @@ const Calendar = () => {
                     key={index}
                     bg="red.50"
                     p={3}
-                    borderLeft="4px solid red"
+                    borderLeft="4px solid #d64252"
                     borderRadius="md"
                     mt={1}
                   >

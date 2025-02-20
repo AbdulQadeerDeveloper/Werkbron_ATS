@@ -12,21 +12,22 @@ import './index.css';
 
 // import CombineRoute from './componentRoute/routes'
 // import Login from './dashboard/auth/loginComponent/component/backgroundImageLogin';
-// import Login from './dashboard/auth/loginComponent/component/overlayImageLogin';
+
+//import MicrosoftLogin from './dashboard/auth/loginComponent/component/overlayImageMicrosoftLogin';
 // import MicrosoftLogin from './dashboard/auth/registerCompoent/component/overlayImageMicrosoftLogin';
 // import MicrosoftLogin from './dashboard/auth/registerCompoent/component/microsoftLogin';
-// import Dashboard from './dashboard/mianDashboard/dashComponent/dashboard';
+import Dashboard from './dashboard/mianDashboard/dashComponent/dashboard';
 
 // Testing Routes Ending-----------------------------------------------------------!
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ChakraProvider>
-      {/* <MicrosoftLogin /> //overlayImageMicrosoftLogin */}
+      {/* <MicrosoftLogin />  */}
       {/* <MicrosoftLogin /> //microsoftLogin */}
       {/* <Login/> //backgroundImageLogin */}
       {/* <Login/> //overlayImageLogin */}
-      {/* <Dashboard/> //Dashboard */}
+      <Dashboard/> 
     </ChakraProvider>
 
   </React.StrictMode>

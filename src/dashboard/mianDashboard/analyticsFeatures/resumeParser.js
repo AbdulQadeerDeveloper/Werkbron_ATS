@@ -39,7 +39,7 @@ const ResumeParser = () => {
   });
 
   return (
-    <Box p={5} border="1px solid #E2E8F0" borderRadius="md" w="380px" h="370px">
+    <Box p={5} border="1px solid #E2E8F0" backgroundColor="white" borderRadius="md" w="100%" h="520px">
       <Text fontSize="lg" fontWeight="bold">Resume Parser</Text>
       <Text fontSize="sm" color="#d64252" mt={1}>
         Upload CV to automatically add candidate to database

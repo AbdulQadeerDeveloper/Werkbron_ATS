@@ -12,11 +12,13 @@ const data = [
 
 const ClientsCard = () => {
   return (
-    <Box p={4} w="380px" h="370px" borderRadius="lg" border="1px solid #E2E8F0" bg="white" boxShadow="md">
+    <Box p={4} w="100%" h="520px" borderRadius="lg" border="1px solid #E2E8F0" bg="white" boxShadow="md">
       {/* **Header Section** */}
       <Flex align="center" justify="space-between" mb={4}>
         <Flex align="center">
-          <div className="devd"><Icon as={FaBuilding} className="icondev" boxSize={5} color="#d64252" /></div>
+          <div className="devd">
+            <Icon as={FaBuilding} className="icondev" boxSize={5} color="#d64252" />
+          </div>
 
           <Stat ml={3}>
             <StatNumber fontSize="2xl">40</StatNumber>
@@ -31,13 +33,13 @@ const ClientsCard = () => {
       </Flex>
 
       {/* **Line Chart** */}
-      <ResponsiveContainer width="100%" height={250}>
+      <ResponsiveContainer width="100%" height={400}>
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Line type="monotone" dataKey="value" stroke="red" strokeWidth={2} dot={false} />
+          <Line type="monotone" dataKey="value" stroke="#d64252" strokeWidth={2} dot={false} />
         </LineChart>
       </ResponsiveContainer>
     </Box>
