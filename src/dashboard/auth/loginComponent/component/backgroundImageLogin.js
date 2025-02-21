@@ -1,5 +1,5 @@
 import { Box, Button, Flex, FormControl, FormLabel, Input, Image, Heading, Text } from "@chakra-ui/react";
-import image from "../../../asserts/WhatsApp Image 2025-02-19 at 4.01.22 PM.jpeg";
+import image from "../../../asserts/backgroundImage.jpeg";
 import logo from "../../../asserts/Logo.png";
 import LoginHeading from "../../loginHeading/heading";
 

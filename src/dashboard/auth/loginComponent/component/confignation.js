@@ -2,11 +2,11 @@ import React from "react";
 import { PublicClientApplication } from "@azure/msal-browser";
 import { MsalProvider, useMsal } from "@azure/msal-react";
 import { Button, Flex, Heading, Image, Icon } from "@chakra-ui/react"
-import MicrosoftIcon from "../../../asserts/Microsoft_Logo_512px (1).png";
+import MicrosoftIcon from "../../../asserts/Microsoft_Logo.png";
 
 const msalConfig = {
   auth: {
-    clientId: "052051ab-aae9-4a33-b6a4-756eb66d0bba",
+    clientId: "c92d4ed3-a223-4108-969d-a5e0dda35b6b",
     authority: "https://login.microsoftonline.com/common",
     redirectUri: "http://localhost:3000",
   },

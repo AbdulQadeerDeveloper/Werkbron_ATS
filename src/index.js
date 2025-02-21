@@ -10,24 +10,23 @@ import './index.css';
 
 // Testing Routes Start-----------------------------------------------------------!
 
-// import CombineRoute from './componentRoute/routes'
-// import Login from './dashboard/auth/loginComponent/component/backgroundImageLogin';
+import CombineRoute from './componentRoute/routes'
+//mport Login from './dashboard/auth/loginComponent/component/backgroundImageLogin';
 
-//import MicrosoftLogin from './dashboard/auth/loginComponent/component/overlayImageMicrosoftLogin';
-// import MicrosoftLogin from './dashboard/auth/registerCompoent/component/overlayImageMicrosoftLogin';
-// import MicrosoftLogin from './dashboard/auth/registerCompoent/component/microsoftLogin';
-import Dashboard from './dashboard/mianDashboard/dashComponent/dashboard';
+import MicrosoftLogin from './dashboard/auth/loginComponent/component/overlayImageMicrosoftLogin';
+//import MicrosoftLogin from './dashboard/auth/registerCompoent/component/microsoftLogin';
+//import Dashboard from './dashboard/mianDashboard/dashComponent/dashboard';
 
 // Testing Routes Ending-----------------------------------------------------------!
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ChakraProvider>
-      {/* <MicrosoftLogin />  */}
-      {/* <MicrosoftLogin /> //microsoftLogin */}
-      {/* <Login/> //backgroundImageLogin */}
-      {/* <Login/> //overlayImageLogin */}
-      <Dashboard/> 
+      <MicrosoftLogin />
+      {/* <MicrosoftLogin /> //microsoftLogin 
+      <Login/> //backgroundImageLogin 
+      <Login/> //overlayImageLogin 
+      <Dashboard/>  */}
     </ChakraProvider>
 
   </React.StrictMode>
