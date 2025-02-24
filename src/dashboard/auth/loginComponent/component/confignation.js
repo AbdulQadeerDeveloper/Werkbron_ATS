@@ -1,59 +1,50 @@
 import React from "react";
 import { PublicClientApplication } from "@azure/msal-browser";
 import { MsalProvider, useMsal } from "@azure/msal-react";
-import { Button, Flex, Heading, Image, Icon } from "@chakra-ui/react"
+import { Button, Flex, Image } from "@chakra-ui/react";
 import MicrosoftIcon from "../../../asserts/Microsoft_Logo.png";
+import { microsoftLogin } from "../reducerFunction/microsoftLoginAction";
+import { useDispatch } from "react-redux";
 
 const msalConfig = {
   auth: {
     clientId: "c92d4ed3-a223-4108-969d-a5e0dda35b6b",
-    authority: "https://login.microsoftonline.com/common",
+    authority: "https://login.microsoftonline.com/b733bcd9-0265-41a4-8b0c-c6f72d5c7b1e",
     redirectUri: "http://localhost:3000",
   },
 };
 
+
+// clientId: process.env.REACT_APP_MICROSOFT_CLIENT_ID,
+// authority: process.env.REACT_APP_MICROSOFT_AUTHORITY,
+// redirectUri: process.env.REACT_APP_MICROSOFT_REDIRECT_URI,
+
 const msalInstance = new PublicClientApplication(msalConfig);
 
-const MicrosoftLogin = () => {
+const MicrosoftLoginButton = () => {
   const { instance } = useMsal();
+  const dispatch = useDispatch();
 
-  const handleLogin = async () => {
-    try {
-      await instance.loginPopup({ scopes: ["User.Read"] });
-      alert("Login Successful!");
-    } catch (error) {
-      console.error("Login Error:", error);
-    }
+  const handleLogin = () => {
+    dispatch(microsoftLogin(instance));
   };
 
   return (
-    <Flex minH="100vh" align="center" justify="center"  bg="gray.50">
-      <Flex direction="column" p={8} >
-      
-        <Button
-          
-          onClick={handleLogin}
-          display="flex"
-          gap="20px"
-          padding="20px"
-          position="relative"
-          right="100px"
-        >
-          <img src={MicrosoftIcon} width="30px"/>
-          Login with Microsoft
-        </Button>
-      </Flex>
-     
-    </Flex>
+    <Button onClick={handleLogin} display="flex" gap={3} p={4}>
+      <Image src={MicrosoftIcon} width="30px" alt="Microsoft Logo" />
+      Login with Microsoft
+    </Button>
   );
 };
 
-const Microsoft = () => {
+const MicrosoftLogin = () => {
   return (
     <MsalProvider instance={msalInstance}>
-      <MicrosoftLogin />
+      <Flex minH="100vh" align="center" justify="center" bg="gray.50">
+        <MicrosoftLoginButton />
+      </Flex>
     </MsalProvider>
   );
 };
 
-export default Microsoft;
+export default MicrosoftLogin;

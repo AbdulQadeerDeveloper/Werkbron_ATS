@@ -10,7 +10,8 @@
 
 # production
 /build
-
+// Zalqarnain@werkbron.nl
+// Zee@1234
 # misc
 .DS_Store
 .env.local
@@ -33,7 +34,7 @@ yarn-error.log*
 
 # production
 /build
-
+/.env
 # misc
 .DS_Store
 .env.local
