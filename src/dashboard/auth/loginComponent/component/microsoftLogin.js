@@ -21,9 +21,24 @@ const MicrosoftLogin = () => {
         </Flex>
 
         {/* Right Side - Image */}
-        <Flex flex={1} display={{ base: "flex", md: "flex" }} align="center" justify="center" p={8} w={{ base: "100%", md: "auto" }}>
-          <Image src={image} alt="Dashboard Preview" h="696px" borderRadius="md" boxShadow="lg" w={{ base: "100%", md: "auto" }} />
+        <Flex
+          flex={1}
+          display={{ base: "flex", md: "flex" }}
+          justifyContent="flex-start"
+          alignItems="flex-start"
+          p={8}
+          w={{ base: "100%", md: "auto" }}
+        >
+          <Image
+            src={image}
+            alt="Dashboard Preview"
+            h="696px"
+            borderRadius="md"
+            boxShadow="lg"
+            w={{ base: "100%", md: "auto" }}
+          />
         </Flex>
+
       </Flex>
     </>
   );

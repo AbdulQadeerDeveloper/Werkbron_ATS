@@ -1,5 +1,5 @@
 import { Box, Button, Flex, FormControl, FormLabel, Input, Image, Heading, Text } from "@chakra-ui/react";
-import backgroundImage from "../../../asserts/Rectangle 591.png";
+import backgroundImage from "../../../asserts/Rectangle.png"
 import logo from "../../../asserts/Logo.png";
 import LoginHeading from "../../loginHeading/heading";
 import overlayImage from "../../../asserts/backgroundImage.jpeg";

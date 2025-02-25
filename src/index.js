@@ -5,7 +5,11 @@ import './index.css';
 import { store, persistor } from './store/index'; 
 import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
+import Login from './dashboard/auth/loginComponent/component/atsLoginNew'
 import MicrosoftLogin from './dashboard/auth/loginComponent/component/overlayImageMicrosoftLogin';
+
+// import MicrosoftLogin from './dashboard/auth/loginComponent/component/overlayImageMicrosoftLogin';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,7 +18,11 @@ root.render(
     <ChakraProvider>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          <MicrosoftLogin /> /
+          {/* <MicrosoftLogin/> */}
+          {/* <Login/> */}
+          {/* <MicrosoftLogin/> */}
+          {/* <Login/> */}
+          <Login/>
         </PersistGate>
       </Provider>
 

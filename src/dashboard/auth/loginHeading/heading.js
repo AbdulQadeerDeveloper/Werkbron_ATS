@@ -9,7 +9,7 @@ const LoginHeading = () => {
       alignItems="center"
       justifyContent="center"
       bg="#D40B52"
-      marginBottom="20px"
+     
     >
       <Heading
         fontFamily="Montserrat"
